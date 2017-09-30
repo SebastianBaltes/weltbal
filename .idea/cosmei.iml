@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/HTML-GL" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/hips" />
+      <excludeFolder url="file://$MODULE_DIR$/modules_for_doku" />
+      <excludeFolder url="file://$MODULE_DIR$/server" />
+      <excludeFolder url="file://$MODULE_DIR$/src/systems/celestial-system/data" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

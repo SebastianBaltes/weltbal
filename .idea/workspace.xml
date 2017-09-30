@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="9" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a0b2183-3e39-431c-8637-29e6fcd0872e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/CelestialBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/Universe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Gravity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/MoveAlgorithm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/OrbitalElements.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Quadratic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Ticker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/Constellations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/elp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/vsop-earth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Body3d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/GeoPos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/MilkyWayParticles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Scene.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Sun.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/BodyOrbitLines.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/OrbitLine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/OrbitLinesManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/Tracer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/TracerManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/utils/DebugPoint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/SolarSystem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/ceres.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth/VSOP-earth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/eris.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/halley.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/haumea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/jupiter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/makemake.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/mars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/mercury.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon/OsculatingOrbit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon/elp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/neptune.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/pluto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/saturn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/sun.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/uranus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/venus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.vsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.vsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/three/RingGeometry2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/ColorUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/GeoCoord.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/JD.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/math/LLSpherical.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/patch/three.toString.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cosmei.iml" afterPath="$PROJECT_DIR$/.idea/cosmei.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js" afterPath="$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cursor-sphere-coordinates.js" afterPath="$PROJECT_DIR$/src/components/cursor-sphere-coordinates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/spherical-coords.js" afterPath="$PROJECT_DIR$/src/components/spherical-coords.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/spherical-grid.js" afterPath="$PROJECT_DIR$/src/components/spherical-grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.bak.js" afterPath="$PROJECT_DIR$/src/index.bak.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="device-location-and-time.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/device-location-and-time.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copy-position.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/copy-position.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celestial-coordinate-transformation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group-opacity.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/group-opacity.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1063">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <marker date="1505592729699" expanded="true" signature="8629:8757" ph="{...}" />
+                <marker date="1505592729699" expanded="true" signature="8629:8761" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>=</find>
+      <find>SpatialVector</find>
+      <find>1024</find>
+      <find>indir</find>
+      <find>width</find>
+      <find>async</find>
+      <find>generate</find>
+      <find>generateCompositeImages</find>
+      <find>size</find>
+      <find>clone</find>
+      <find>rgbaToInt</find>
+      <find>project</find>
+      <find>datamaps</find>
+      <find>healpix</find>
+      <find>heal</find>
+      <find>texture</find>
+      <find>fALSEcO</find>
+      <find>FalseColorMaterial</find>
+      <find>add</find>
+      <find>var</find>
+      <find>colormap</find>
+      <find>offsets</find>
+      <find>length</find>
+      <find>ndiv</find>
+      <find>Utils</find>
+      <find>__</find>
+      <find>ASpherical</find>
+      <find>__.rad</find>
+      <find>healpix-shpere</find>
+      <find>universeSphere</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>require</replace>
+      <replace>resolve</replace>
+      <replace>path.resolve</replace>
+      <replace>this.raycaster</replace>
+      <replace>this.intersected</replace>
+      <replace>this.hovered</replace>
+      <replace>let</replace>
+      <replace>this.convertTZ</replace>
+      <replace>AstronomyClass.prototype.</replace>
+      <replace>Astronomy</replace>
+      <replace>sk</replace>
+      <replace>jpg</replace>
+      <replace>init</replace>
+      <replace>source</replace>
+      <replace>0.0</replace>
+      <replace>webpack</replace>
+      <replace />
+      <replace>:</replace>
+      <replace>width</replace>
+      <replace>fullWidth</replace>
+      <replace>TextureMaterial</replace>
+      <replace>const</replace>
+      <replace>textures</replace>
+      <replace>LLSpherical</replace>
+      <replace>THREE.Math.degToRad</replace>
+      <replace>healpix-sphere</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/node_modules/three</dir>
+      <dir>$PROJECT_DIR$/node_modules/aframe/src</dir>
+      <dir>$PROJECT_DIR$/modules/aframe/src</dir>
+      <dir>$PROJECT_DIR$/modules_for_doku/AladinLite</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/shorts.js" />
+        <option value="$PROJECT_DIR$/src/Utils.js" />
+        <option value="$PROJECT_DIR$/src/planetarium/Planetarium.js" />
+        <option value="$PROJECT_DIR$/src/patch/CustomRendererOptions.js" />
+        <option value="$PROJECT_DIR$/src/patch/setCustomWebGLRendererProps.js" />
+        <option value="$PROJECT_DIR$/src.old/index.js" />
+        <option value="$PROJECT_DIR$/src/geometry/HealpixGeometry.js" />
+        <option value="$PROJECT_DIR$/src/geometry/healpixGeometry.js" />
+        <option value="$PROJECT_DIR$/src/geometries/healpix.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix.js" />
+        <option value="$PROJECT_DIR$/src/components/renderer-parameter-patch.js" />
+        <option value="$PROJECT_DIR$/src/components/sun-position-from.js" />
+        <option value="$PROJECT_DIR$/modules/AladinLite/readme.md" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/jsorrery/src/graphics3d/MilkyWayParticles.js" />
+        <option value="$PROJECT_DIR$/src/components/device-location-and-time.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/scripts/slurpAladinLite.js" />
+        <option value="$PROJECT_DIR$/scripts/mergeTiles.js" />
+        <option value="$PROJECT_DIR$/scripts/createIndex.js" />
+        <option value="$PROJECT_DIR$/src/components/interacting-html-to-canvas.js" />
+        <option value="$PROJECT_DIR$/src/components/cursor-sphere-coordinates.js" />
+        <option value="$PROJECT_DIR$/src/components/spherical-coords.js" />
+        <option value="$PROJECT_DIR$/src/components/copy-position.js" />
+        <option value="$PROJECT_DIR$/src/math/ASpherical.js" />
+        <option value="$PROJECT_DIR$/node_modules/dom-to-image/src/dom-to-image.js" />
+        <option value="$PROJECT_DIR$/src/components/life-html-texture.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/modules_for_doku/AladinLite/src/js/healpix.min.js" />
+        <option value="$PROJECT_DIR$/modules_for_doku/AladinLite/src/js/Healpix.js" />
+        <option value="$PROJECT_DIR$/scripts/dummyTiles.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere.js" />
+        <option value="$PROJECT_DIR$/modules_for_doku/ligo/HEALPixMesh.js" />
+        <option value="$PROJECT_DIR$/modules_for_doku/ligo/FalseColorMaterial.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere/ligo.org-scientists-first2years-webgl_viewer/TextureMaterial.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere/ligo.org-scientists-first2years-webgl_viewer/HEALPixMesh.js" />
+        <option value="$PROJECT_DIR$/src/components/group-opacity.js" />
+        <option value="$PROJECT_DIR$/server/img/healpix/index.json" />
+        <option value="$PROJECT_DIR$/src/patch/three.toString.js" />
+        <option value="$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js" />
+        <option value="$PROJECT_DIR$/src/components/spherical-grid.js" />
+        <option value="$PROJECT_DIR$/src/components/spherical-rotation.js" />
+        <option value="$PROJECT_DIR$/src/math/LLSpherical.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere/index.js" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere/HEALPixMesh.js" />
+        <option value="$PROJECT_DIR$/src/jsorrery/constants.js" />
+        <option value="$PROJECT_DIR$/src/jsorrery/README.md" />
+        <option value="$PROJECT_DIR$/src/components/healpix-sphere/README.md" />
+        <option value="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/SolarSystem.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="50" />
+    <option name="y" value="17" />
+    <option name="width" value="1871" />
+    <option name="height" value="1064" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>BashSupport</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Type compatibilityPHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
+              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
+              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
+              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="systems" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
+              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="systems" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="celestial-system" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/jsorrery" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/healpix-sphere/ligo.org-scientists-first2years-webgl_viewer" />
+      <recent name="$PROJECT_DIR$/src/components/healpix-sphere" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/jsorrery/img" />
+      <recent name="$PROJECT_DIR$/server/jsorrery/data" />
+      <recent name="$PROJECT_DIR$/src/components/planetarium" />
+      <recent name="$PROJECT_DIR$/src/jsorrery" />
+      <recent name="$PROJECT_DIR$/src/jsorrery/data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a0b2183-3e39-431c-8637-29e6fcd0872e" name="Default" comment="" />
+      <created>1502999658308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502999658308</updated>
+      <workItem from="1502999659750" duration="51000" />
+      <workItem from="1502999764224" duration="286000" />
+      <workItem from="1503000082927" duration="13822000" />
+      <workItem from="1503017151162" duration="430000" />
+      <workItem from="1503023862191" duration="6918000" />
+      <workItem from="1503053091293" duration="681000" />
+      <workItem from="1503066857259" duration="15926000" />
+      <workItem from="1503152189884" duration="8980000" />
+      <workItem from="1503190929029" duration="11683000" />
+      <workItem from="1503252095005" duration="14543000" />
+      <workItem from="1503949306336" duration="7353000" />
+      <workItem from="1504125897280" duration="9148000" />
+      <workItem from="1504779303157" duration="150009000" />
+      <workItem from="1505118161354" duration="1700000" />
+      <workItem from="1505123945928" duration="6745000" />
+      <workItem from="1505153362460" duration="5532000" />
+      <workItem from="1505161201920" duration="11143000" />
+      <workItem from="1505209008536" duration="88000" />
+      <workItem from="1505221983352" duration="27209000" />
+      <workItem from="1505331550773" duration="12069000" />
+      <workItem from="1505377145929" duration="20000" />
+      <workItem from="1505384877609" duration="5035000" />
+      <workItem from="1505405779753" duration="2640000" />
+      <workItem from="1505411028189" duration="14528000" />
+      <workItem from="1505510260995" duration="153000" />
+      <workItem from="1505510530155" duration="176000" />
+      <workItem from="1505510907088" duration="335000" />
+      <workItem from="1505511375439" duration="376000" />
+      <workItem from="1505511919054" duration="396000" />
+      <workItem from="1505512449021" duration="363000" />
+      <workItem from="1505517831055" duration="13000" />
+      <workItem from="1505593922490" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="328358000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="50" y="17" width="1871" height="1092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16318887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901752" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/BigJupiter.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/EarthMoon.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/InnerSolarSystem.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/MoonSOI.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/NasaNumbers.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/NearEarthObject.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/SolarSystemDwarves.js" />
+    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/Loader.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.fsh" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.vsh" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.fsh" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.vsh" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/ColorUtils.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/GeoCoord.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/JD.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/CelestialBody.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/constants.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth/VSOP-earth.js" />
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/negx.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/posy.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/posz.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/posx.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/negz.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/skymap/negy.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/img/3000_CC_BY-NC.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Gravity.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Math.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/MoveAlgorithm.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/OrbitalElements.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/README.md" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/LICENSE.md" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Ticker.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Quadratic.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/healpix-sphere/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/Universe.js" />
+    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/SolarSystem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/InnerSolarSystem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Scene.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/sun.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Body3d.js" />
+    <entry file="file://$PROJECT_DIR$/server/jsorrery/data/milkyway.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/MilkyWayParticles.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Sun.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/loaders/ResourceLoader.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/SolarSystem.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/copy-position.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/device-location-and-time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/group-opacity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1063">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <marker date="1505592729699" expanded="true" signature="8629:8757" ph="{...}" />
+            <marker date="1505592729699" expanded="true" signature="8629:8761" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
