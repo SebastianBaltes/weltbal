@@ -8,9 +8,9 @@ import "aframe-log-component";
 import "aframe-text-geometry-component";
 import "aframe-look-at-component";
 
-import stereo from "aframe-stereo-component";
-AFRAME.registerComponent('stereo', stereo.stereo_component);
-AFRAME.registerComponent('stereocam', stereo.stereocam_component);
+import {stereoComponent,stereocamComponent} from "aframe-stereo-component";
+AFRAME.registerComponent('stereo', stereo_component);
+AFRAME.registerComponent('stereocam', stereocam_component);
 
 import "./components/aframe-animation-component-fork";
 import './components/celestial-system';
@@ -77,7 +77,7 @@ const html = `
 
     <a-scene 
         antialias="true" 
-        celestial-system="scale-time: 100; reposition-ms: 1000; 
+        celestial-system="scale-time: 1; reposition-ms: 1000; 
                           time: 2017-09-28T23:00:00.000-00:00;
                           longitude: 7.8134; latitude: 51.6802; 
                           altitude: 0; body: earth;"
@@ -133,11 +133,22 @@ const html = `
 
             </a-entity>
             
-            <a-entity id="sun" celestial-body="name:sun;scale:50;">
+            <a-entity id="sun" celestial-body="name:sun;scale:200;">
 
-                <a-plane stereo="eye:left" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-B_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
-                <a-plane stereo="eye:right" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-A_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+
+            <a-entity geometry="primitive: box" material="color: red" position="2 1 0" stereo="eye: right"></a-entity>
+            <a-entity geometry="primitive: box" material="color: blue" position="2 1 0" stereo="eye:left"></a-entity>
+            
+                <a-plane stereo="eye:left" material="shader:flat;src:server/img/helioviewer/test_a.png;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+                <a-plane stereo="eye:right" material="shader:flat;src:server/img/helioviewer/test_b.png;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+
+                <!--
+                <a-plane stereo="eye:left" material="color:red;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+                <a-plane stereo="eye:right" material="color:blue;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
   
+ 
+                <a-sphere mixin="Sphere" color="yellow" material="side:double" radius="1"></a-sphere>
+                --->
 
                 <a-entity light="type: ambient; color: #aaa; intensity: 0" 
                             foreward="event:celestial-system-ready;from:a-scene;"
@@ -164,32 +175,7 @@ const html = `
                 ${coordinateGrid({longitudeUnit:'°',color:'#fff',longitudeClockwise:false, radius: 2})}
             
             </a-entity>
-
-            <a-entity celestial-body="name:mercury;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mercurymap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:venus;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/venusmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:mars;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mars_1k_color.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:jupiter;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/jupitermap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:saturn;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/saturnmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:uranus;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/uranusmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:neptune;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/neptunemap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:pluto;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/plutomap1k.jpg);"></a-sphere>
-            </a-entity>
-
+    
         </a-entity>
 
     </a-scene>

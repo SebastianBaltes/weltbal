@@ -165,28 +165,28 @@ const html = `
             
             </a-entity>
 
-            <a-entity celestial-body="name:mercury;scale:500;">
+            <a-entity celestial-body="name:mercury;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mercurymap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:venus;scale:500;">
+            <a-entity celestial-body="name:venus;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/venusmap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:mars;scale:500;">
+            <a-entity celestial-body="name:mars;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mars_1k_color.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:jupiter;scale:500;">
+            <a-entity celestial-body="name:jupiter;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/jupitermap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:saturn;scale:500;">
+            <a-entity celestial-body="name:saturn;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/saturnmap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:uranus;scale:500;">
+            <a-entity celestial-body="name:uranus;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/uranusmap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:neptune;scale:500;">
+            <a-entity celestial-body="name:neptune;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/neptunemap.jpg);"></a-sphere>
             </a-entity>
-            <a-entity celestial-body="name:pluto;scale:500;">
+            <a-entity celestial-body="name:pluto;scale:5000;">
                 <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/plutomap1k.jpg);"></a-sphere>
             </a-entity>
 

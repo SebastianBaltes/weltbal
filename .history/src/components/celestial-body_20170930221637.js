@@ -10,7 +10,7 @@ AFRAME.registerComponent('celestial-body', {
 
     init()  {
         injectCelestialSystem(this);
-        this.i=0;
+        debugger;
     },
 
     tick() {
@@ -29,11 +29,7 @@ AFRAME.registerComponent('celestial-body', {
             object3D.quaternion.copy(body.quaternion);
 
             const s = body.radius * scale * data.scale;
-            object3D.scale.set(s,s,s);
-            
-            if (this.i++==100) {
-                console.log(body.name,perspectivePosition,s,body.radius);
-            }
+            object3D.scale.set(s,s,s);    
         }
     },
 

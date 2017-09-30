@@ -7,10 +7,7 @@ import "aframe-environment-component";
 import "aframe-log-component";
 import "aframe-text-geometry-component";
 import "aframe-look-at-component";
-
-import stereo from "aframe-stereo-component";
-AFRAME.registerComponent('stereo', stereo.stereo_component);
-AFRAME.registerComponent('stereocam', stereo.stereocam_component);
+import "aframe-stereo-component";
 
 import "./components/aframe-animation-component-fork";
 import './components/celestial-system';
@@ -77,7 +74,7 @@ const html = `
 
     <a-scene 
         antialias="true" 
-        celestial-system="scale-time: 100; reposition-ms: 1000; 
+        celestial-system="scale-time: 1; reposition-ms: 1000; 
                           time: 2017-09-28T23:00:00.000-00:00;
                           longitude: 7.8134; latitude: 51.6802; 
                           altitude: 0; body: earth;"
@@ -96,9 +93,7 @@ const html = `
     
             <a-entity id="horizontal-reference-frame" celestial-location>
 
-                <a-camera near="0.1" far="10000000000000000000" 
-                          renderer-parameter-patch="logarithmicDepthBuffer: true"
-                          stereocam="eye:left;">
+                <a-camera near="0.1" far="10000000000000000000" renderer-parameter-patch="logarithmicDepthBuffer: true">
                 </a-camera>
                 
                 <a-entity laser-controls line="color: yellow; opacity: 0.75"></a-entity>
@@ -118,11 +113,10 @@ const html = `
         
             <a-entity id="equatorial-reference-frame" celestial-location="quaternion:false;" celestial-coordinate-transformation="from:ecliptic;to:equatorial">
             
-            <!--
                 <a-sphere mixin="Sphere" color="darkblue" material="side:double" radius="10000000000000"></a-sphere>
                 
+                <!--
                 ${coordinateGrid({longitudeUnit:'°',color:'#fff',longitudeClockwise:false, radius: 1000000000})}
-            -->
                 
                 <a-entity stars="size: -1; mag: 6; src: url(server/data/milkyway.json); texture: url(server/jsorrery/img/star.png);"></a-entity>
 
@@ -130,14 +124,23 @@ const html = `
                 </a-entity>
    
                 <a-entity id="universeSphere" healpix-sphere="radius: 1000000000000000000; detail: 5" celestial-coordinate-transformation="from:equatorial;to:galactic"></a-entity>
+                -->
 
             </a-entity>
             
-            <a-entity id="sun" celestial-body="name:sun;scale:50;">
+            <a-entity id="sun" celestial-body="name:sun">
+<!--
+                <a-sphere mixin="Sphere" color="yellow" material="side:double" radius="1"></a-sphere>
+-->
 
-                <a-plane stereo="eye:left" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-B_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
-                <a-plane stereo="eye:right" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-A_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
-  
+                <a-plane material="shader:flat;src:server/img/helioviewe/2007_04_29_09_54_21_EUVI-A_171_1024.png;side:double;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+
+<!--
+<a-plane stereo="eye:right"></a-plane>
+
+
+<a-entity sun="geoSize:1;"></a-entity>
+--->
 
                 <a-entity light="type: ambient; color: #aaa; intensity: 0" 
                             foreward="event:celestial-system-ready;from:a-scene;"
@@ -155,7 +158,7 @@ const html = `
                 ${coordinateGrid({longitudeUnit:'°',color:'#fff',longitudeClockwise:true, radius: 1})}
             </a-entity>
     
-            <a-entity id="moon" celestial-body="name:moon;scale:50;">
+            <a-entity id="moon" celestial-body="name:moon">
 
                 <a-sphere radius="1" 
                           material="shader: phong; shininess: 5; src: url(server/img/moon/moon1024x512.jpg); normalMap: url(server/img/moon/normal1024x512.jpg);">
@@ -164,32 +167,7 @@ const html = `
                 ${coordinateGrid({longitudeUnit:'°',color:'#fff',longitudeClockwise:false, radius: 2})}
             
             </a-entity>
-
-            <a-entity celestial-body="name:mercury;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mercurymap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:venus;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/venusmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:mars;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/mars_1k_color.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:jupiter;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/jupitermap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:saturn;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/saturnmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:uranus;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/uranusmap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:neptune;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/neptunemap.jpg);"></a-sphere>
-            </a-entity>
-            <a-entity celestial-body="name:pluto;scale:500;">
-                <a-sphere radius="1" material="shader: phong; shininess: 5; src: url(server/jsorrery/img/plutomap1k.jpg);"></a-sphere>
-            </a-entity>
-
+    
         </a-entity>
 
     </a-scene>
