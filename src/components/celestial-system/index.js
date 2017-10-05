@@ -35,6 +35,8 @@ const celestialSystem = {
         altitude: {type: 'number', default: 0},
         body: {type: 'string', default: 'earth'},
         north: {type: 'number', default: 0},
+        scaleBody: {type: 'number', default: 1},
+        perspective: {type: 'string', default: 'linear'},
     },
 
     init() {
@@ -84,7 +86,7 @@ const celestialSystem = {
             if (this.rotationEclipticToEquatorial==null) {
                 this.rotationEclipticToEquatorial = new THREE.Quaternion().fromArray(json.eqquat);                
             }
-            // console.log('webworker result',json);
+            // console.log('json',json);
             const snapshot = new Snapshot().fromJSON(json);
             this.pushSnapshot(snapshot);
         };
@@ -246,13 +248,30 @@ const celestialSystem = {
     },
 
     perspective(position) {
-        const perspectivePosition = position.clone().sub(this.observer.positionWorld);
-        const distance = perspectivePosition.length();
-        const perspectiveDistance = perspective(distance);
-        const scale = perspectiveDistance / distance;
-        perspectivePosition.normalize().multiplyScalar(perspectiveDistance);
-        perspectivePosition.add(this.observer.positionWorld);
-        return {distance,perspectiveDistance,perspectivePosition,scale};
+        if (this.data.perspective=='linear') {
+            const perspectivePosition = position.clone().sub(this.observer.positionWorld);
+            const distance = perspectivePosition.length();
+            return {
+                distance,
+                perspectiveDistance: distance,
+                perspectivePosition: position,
+                scale: this.data.scaleBody
+            };    
+        } else {
+            const perspectivePosition = position.clone().sub(this.observer.positionWorld);
+            const distance = perspectivePosition.length();
+            const perspectiveDistance = perspective(distance);
+            const scale = perspectiveDistance / distance * this.data.scaleBody;
+            perspectivePosition.normalize().multiplyScalar(perspectiveDistance);
+            perspectivePosition.add(this.observer.positionWorld);
+            return {
+                distance,
+                perspectiveDistance,
+                perspectivePosition,
+                scale
+            };
+        }
+
     },
 
 };

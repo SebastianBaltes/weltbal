@@ -24,7 +24,6 @@ import { pluto } from '../bodies/pluto';
 export default class WUniverse {
 
     constructor() {
-        this.maxPrecision = true;
         this.setDate(new Date());
         this.createBodies();
         this.setEarthTiltAndEquatorialReferenceFrame();
@@ -45,6 +44,10 @@ export default class WUniverse {
         this.currentJD = getJD(date);
         this.currentDate = getDateFromJD(this.currentJD);
         this.currentJ2000Time = getJ2000SecondsFromJD(this.currentJD);
+        this.currentMs = this.date.getTime();
+        
+        // Time T measured in Julian centuries from the Epoch J2000.0
+        this.T = (this.currentJD - 2451545) / 36525;
     }
 
     createBodies() {
@@ -87,13 +90,13 @@ export default class WUniverse {
         const sun = this.getBody('sun');
         const earth = this.getBody('earth');
         const dirSunEarth = earth.position.clone().sub(sun.position).normalize();
-        earth.tiltQuaternion = new THREE.Quaternion().setFromAxisAngle( dirSunEarth, THREE.Math.degToRad(earth.tilt) ); 
- 
+        earth.tiltQuaternionJ2000Equinox = new THREE.Quaternion().setFromAxisAngle( dirSunEarth, THREE.Math.degToRad(earth.tilt)); 
+
         // see https://en.wikipedia.org/wiki/Equatorial_coordinate_system
         // the equatorial coordinate System is approximately defined 
         // by the orientation of earths north pole at the epoch j2000 (=> +90° declination)
         // and the position of the sun at the vernal equinox (=> 0h right ascension)
-        const dirNorth = new THREE.Vector3(0,1,0).applyQuaternion(earth.tiltQuaternion).normalize();
+        const dirNorth = new THREE.Vector3(0,1,0).applyQuaternion(earth.tiltQuaternionJ2000Equinox).normalize();
         const dirEarthSun = sun.position.clone().sub(earth.position).normalize();
         const dirRightAscension6h = dirNorth.clone().cross(dirEarthSun).normalize();
         const basis = new THREE.Matrix4().makeBasis(dirRightAscension6h,dirNorth,dirEarthSun);

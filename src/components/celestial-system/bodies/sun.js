@@ -10,4 +10,15 @@ export const sun = {
 	map: './img/sunmap.jpg',
 	k: 0.01720209895, //gravitational constant (μ)
 	isCentral: true,
+	"rotation": {
+		// In hours
+		"period": 24.47*24,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 0,
+		// Inclination of orbit plane with respect to ecliptic
+		"ascendingnode": 0.0,		
+		"inclination": 0,
+		"meridianangle": 0
+	},
+
 };

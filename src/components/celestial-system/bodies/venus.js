@@ -26,4 +26,15 @@ export const venus = {
 			o: -0.27769418,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 5832.443616,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 177.36,
+		// Inclination of orbit plane with respect to ecliptic
+		"ascendingnode": 0.0,		
+		"inclination": 3.39458,
+		"meridianangle": 19.80
+	},
 };
+

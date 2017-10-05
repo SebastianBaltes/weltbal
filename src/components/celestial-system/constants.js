@@ -28,7 +28,9 @@ export const YEAR = 365.25;
 export const CENTURY = 100 * YEAR;
 export const SIDEREAL_DAY = 3600 * 23.9344696;
 
-// export const J2000 = new Date('2000-01-01T12:00:00-00:00');
+export const J2000_DATE = new Date('2000-01-01T12:00:00-00:00');
+export const J2000_DATE_MS = J2000_DATE.getTime();
+
 export const J2000 = 2451545;
 
 // The exakt date has different sources, it may be 07:30 according to nasa
@@ -39,3 +41,8 @@ export const DEFAULT_CALCULATIONS_PER_TICK = 10;
 
 export const PARSEC     = 30856775814913.7; 
 export const LIGHT_YEAR =  9460730472580.8;
+
+export const MS_TO_H = 1000 * 60 * 60;
+
+export const OBLIQUITY_DEG_J2000 = 23.4392808;
+

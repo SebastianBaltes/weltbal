@@ -21,12 +21,18 @@ AFRAME.registerComponent('celestial-location', {
             const data = this.data;
             const object3D = this.el.object3D;
             const observer = this.celestialSystem.observer;
+            
             if (data.quaternion) {
                 object3D.quaternion.copy(observer.quaternionWorld);                
             }
             if (data.position) {
                 object3D.position.copy(observer.positionWorld);
             }
+
+            // const sun = this.celestialSystem.getBody('sun');
+            // const earth = this.celestialSystem.getBody('earth');
+            // const dirSunEarth = earth.position.clone().sub(sun.position).normalize().multiplyScalar(10000000+6000000);
+            // object3D.position.copy(earth.position).add(dirSunEarth);
         }
     },
 

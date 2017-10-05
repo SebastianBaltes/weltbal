@@ -26,4 +26,14 @@ export const pluto = {
 			o: -0.01183482,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 153.36,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 119.61,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 1.767975,
+		"ascendingnode": 49.24,
+		"meridianangle": 228.66
+	},
 };

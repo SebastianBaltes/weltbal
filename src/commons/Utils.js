@@ -13,10 +13,6 @@ export function waitUntil(callback,predicate,waitIntervall=100,maxWaitTime=Date.
     }
 }
 
-// rotation between Quarternions
-export function getRotationFromAToB(a,b) {
-    return a.clone().inverse().multiply(b);
-}
 
 export function toThreeJsConventionXYZ(astro) {
     // see https://en.wikipedia.org/wiki/Geographic_coordinate_system#/media/File:ECEF_ENU_Longitude_Latitude_relationships.svg
@@ -24,3 +20,4 @@ export function toThreeJsConventionXYZ(astro) {
     // x = -x
     return new THREE.Vector3().set(-astro.x,astro.z,astro.y);
 }
+

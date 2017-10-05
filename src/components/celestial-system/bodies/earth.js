@@ -3,21 +3,11 @@ import { J2000, AU, SIDEREAL_DAY, NM_TO_KM, CIRCLE, YEAR, DAY, DEG_TO_RAD, QUART
 import { J2000Date, getDeltaT } from '../utils/JD';
 import { VSOP } from './earth/VSOP-earth';
 
-//time from where rotation is computed: the solstice before system's reference time (J2000)
-//solar noon at J2000 was 12:03:18, azimut at 12:00 was 179.15
-//I have found that 1999-12-22T07:30:30.000Z aligns with the X axis, even if 1999-12-22T07:44:00.000Z is the solstice
-//2000-03-20T07:26:28.000Z aligns with the Y axis, even though most sources cite 7:35 as the equinox
-// see https://eclipse.gsfc.nasa.gov/SEpath/deltat.html for DeltaT
-const solstice = new Date('1999-12-22T07:44:30.000Z');
-//1 = 1 rotation
-const baseRotation = (((J2000Date - solstice) / 1000) / (YEAR * DAY));
-// let testTilt = 0;
-
 export const earth = {
 	title: 'The Earth',
 	name: 'earth',
 	mass: 5.9736e24,
-	radius: 3443.9307 * NM_TO_KM,
+	radius: 6378.137,
 	color: '#1F7CDA',
 	//voir https://visibleearth.nasa.gov/view_cat.php?categoryID=1484 pour changer
 	map: './img/earthmap1k_clouds.jpg',
@@ -48,4 +38,64 @@ export const earth = {
 			o: 0.0,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 23.93447117,
+		// Angle between equatorial plane and orbital plane
+		// "axialtilt": -23.4392911,
+		"axialtilt": -23.4392911,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 0.00005,
+		"ascendingnode": 0, // ?		
+		"meridianangle": 180 // 220 //64.5 // 180
+	},
+	
+	setTilt() {
+		if (this.tiltQuaternionJ2000Equinox) {
+			this.tiltQuaternion.copy(this.tiltQuaternionJ2000Equinox);
+		}
+	},
+
+	setRotation() {
+		// https://www.physicsforums.com/threads/planets-and-suns-mean-angular-velocity.460887/
+		// Earth = 7.292115053925690e-05, Jupiter = 1.773408215404907e-04, 
+		// Mars = 7.088218127178316e-05, Mercury = 1.240013441242619e-06, 
+		// Moon = 2.661699538941653e-06, Neptune = 1.083382527619075e-04, 
+		// Pluto = -1.295641039282477e-05 Saturn = 1.636246173744684e-04, 
+		// Sun = 2.865329607243705e-06, Uranus = -1.041365902144588e-04
+
+		// ftp://tai.bipm.org/iers/conv2003/chapter1/tn32_c1.pdf
+		const radPerSeconds = 7.292115e-5;
+		const secondsPerDay = 60 * 60 * 24;
+		const radSinceJ2000 = (this.jd-J2000) * secondsPerDay * radPerSeconds;
+		this.rotation.angle = this.baseMapRotation + radSinceJ2000;
+	},
+
+
+    // setObliquity() {
+    //     // JPL's fundamental ephemerides have been continually updated. The
+    //     // Astronomical Almanac for 2010 specifies:
+    //     const T = this.T;
+    //     this.obliquity = 23.0 + 26.0 / 60.0 + (21.406 - (46.836769 - (0.0001831 + (0.00200340 - (0.576e-6 - 4.34e-8 * T) * T) * T) * T) * T) / 3600.0;
+    // }
+
+
+
+	// setTilt() {
+	// 	const obliquity = this.universe.obliquity;
+	// 	const xAxis = this.universe.dirSunEarthJ2000Equinox 
+	// 				  ? this.universe.dirSunEarthJ2000Equinox
+	// 				  : new THREE.Vector3(1,0,0);
+	// 	// // TODO precession, nutation
+	// 	this.tiltQuaternion.setFromAxisAngle( 
+	// 		xAxis, 
+	// 		THREE.Math.degToRad(this.tilt) ); 
+	// },
+	// setRotation() {
+	// 	// ftp://tai.bipm.org/iers/conv2003/chapter1/tn32_c1.pdf
+	// 	const radPerSeconds = 7.292115e-5;
+	// 	const secondsPerDay = 60 * 60 * 24;
+	// 	const radSinceJ2000 = (this.jd-J2000) * secondsPerDay * radPerSeconds;
+	// 	this.rotation.angle = this.baseMapRotation + radSinceJ2000;
+	// },
 };

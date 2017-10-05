@@ -26,4 +26,14 @@ export const uranus = {
 			o: 0.04240589,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 17.24,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": -97.77,
+		// Inclination of orbit plane with respect to ecliptic
+		"ascendingnode": 0.0,		
+		"inclination": 0.772556,
+		"meridianangle": 331.13
+	},
 };

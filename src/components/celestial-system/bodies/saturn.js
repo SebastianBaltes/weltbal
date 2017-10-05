@@ -32,4 +32,15 @@ export const saturn = {
 			o: -0.28867794,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 10.65622222,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": -26.73,
+		// Inclination of orbit plane with respect to ecliptic
+		"ascendingnode": 0.0,		
+		"inclination": 2.485240,
+		"meridianangle": 358.93
+	},
+
 };

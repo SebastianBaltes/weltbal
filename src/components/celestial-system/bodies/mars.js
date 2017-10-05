@@ -27,4 +27,16 @@ export const mars = {
 			o: -0.29257343,
 		},
 	},
+	"rotation": {
+		// In hours			
+		"period": 24.622962156,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 25.19,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 1.850,
+		// "ascendingnode" : 47.68143,
+		"ascendingnode" : 49.57854, 
+		"meridianangle": 176.630
+	},
+
 };

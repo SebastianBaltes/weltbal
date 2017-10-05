@@ -11,7 +11,7 @@ export const jupiter = {
 	map: './img/jupitermap.jpg',
 	orbit: {
 		base: {
-			a: 5.20288700 * AU, 
+			a: 5.20288700 * AU,
 			e: 0.04838624,
 			i: 1.30439695,
 			l: 34.39644051,
@@ -26,5 +26,15 @@ export const jupiter = {
 			lp: 0.21252668,
 			o: 0.20469106,
 		},
+	},
+	"rotation": {
+		// In hours
+		"period": 9.927953,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 3.13,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 1.305,
+		"ascendingnode": 337.80,
+		"meridianangle": 334.0
 	},
 };

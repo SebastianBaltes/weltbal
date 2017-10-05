@@ -26,4 +26,14 @@ export const neptune = {
 			o: -0.00508664,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 16.11,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 28.32,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 1.767975,
+		"ascendingnode": 49.24,
+		"meridianangle": 228.66
+	},
 };

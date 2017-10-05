@@ -77,11 +77,11 @@ const html = `
 
     <a-scene 
         antialias="true" 
-        celestial-system="scale-time: 1; reposition-ms: 1000; 
-                          time: 2017-10-01T00:00:00.000+02:00;
-                          longitude: 7.8134; latitude: 51.6802; 
+        celestial-system="scale-time: 0; reposition-ms: 1000; 
+                          time: 2000-06-21T12:00:00.000-00:00;
+                          longitude: 0; latitude: 90; 
                           altitude: 0; body: earth;
-                          scaleBody: 50;"
+                          scaleBody: 10;"
         >
 <!--
                            time: 2017-09-28T23:00:00.000-00:00;
@@ -142,6 +142,7 @@ const html = `
 
                 <a-plane stereo="eye:left" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-B_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
                 <a-plane stereo="eye:right" material="src:server/img/helioviewer/2007_04_29_09_54_21_EUVI-A_171_1024.png;shader:flat;side:double;transparent:true;" width="1.86" height="1.86" stereo="eye:both" look-at="[camera]"></a-plane>
+  
 
                 <a-entity light="type: ambient; color: #aaa; intensity: 0" 
                             foreward="event:celestial-system-ready;from:a-scene;"
@@ -164,6 +165,8 @@ const html = `
                 <a-sphere radius="1" 
                           material="shader: phong; shininess: 5; src: url(server/img/moon/moon1024x512.jpg); normalMap: url(server/img/moon/normal1024x512.jpg);">
                 </a-sphere>
+
+                ${coordinateGrid({longitudeUnit:'°',color:'#fff',longitudeClockwise:false, radius: 2})}
             
             </a-entity>
 

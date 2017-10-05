@@ -8,7 +8,7 @@ export const mercury = {
 	radius: 2439,
 	color: '#588a7b',
 	map: './img/mercurymap.jpg',
-	orbit: { 
+	orbit: {
 		base: {
 			a: 0.38709927 * AU,
 			e: 0.20563593,
@@ -26,4 +26,15 @@ export const mercury = {
 			o: -0.12534081,
 		},
 	},
+	"rotation": {
+		// In hours
+		"period": 1407.509405,
+		// Angle between equatorial plane and orbital plane
+		"axialtilt": 2.1833,
+		// Inclination of orbit plane with respect to ecliptic
+		"inclination": 7.005,
+		"ascendingnode": 11.01,
+		"meridianangle": 329.548
+	},
+
 };

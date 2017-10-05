@@ -23,17 +23,20 @@ AFRAME.registerComponent('celestial-body', {
             const {perspectivePosition,scale} =
                 data.perspective 
                 ? this.celestialSystem.perspective(body.position)
-                : {perspectivePosition: body.position, scale: 0.1};
+                : {perspectivePosition: body.position, scale: 1};
 
             object3D.position.copy(perspectivePosition);
             object3D.quaternion.copy(body.quaternion);
 
             const s = body.radius * scale * data.scale;
+            
+            //console.log(data.name,s);
+            
             object3D.scale.set(s,s,s);
             
-            if (this.i++==100) {
-                console.log(body.name,perspectivePosition,s,body.radius);
-            }
+            // if (this.i++==100) {
+            //     console.log(body.name,perspectivePosition,s,body.radius);
+            // }
         }
     },
 

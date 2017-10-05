@@ -1,14 +1,16 @@
-import { Vector3, Euler, Quaternion, Matrix4 } from 'three';
+import '../../commons/three.toString';
+import '../../commons/three.patch';
+import * as THREE from 'three';
 
 export default class Body {
 
     constructor() {
         this.name = null;
         this.radius = 0;
-        this.position = new Vector3();
-        this.tilt = new Quaternion();        
+        this.position = new THREE.Vector3();
+        this.tilt = new THREE.Quaternion();        
         this.rotation = 0;
-        this.quaternion = new Quaternion();        
+        this.quaternion = new THREE.Quaternion();        
     }
 
     interpolate(a,b,t) {
@@ -41,7 +43,7 @@ export default class Body {
     }
 
     updateQuaternion() {
-        this.quaternion.copy(this.tilt).multiply(new Quaternion().setFromEuler(new Euler(0, this.rotation, 0,  'XYZ')));
+        this.quaternion.copy(this.tilt).rotateY(this.rotation);
     }
 
 }
