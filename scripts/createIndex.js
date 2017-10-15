@@ -1,25 +1,16 @@
 var Jimp = require("jimp");
 const fs = require('fs');
 const path = require('path');
+const {
+    mkdir,
+    nPixMax,
+    norderPath,
+    tilePath,
+    tiles,
+    globHibsFolders
+} = require('./common');
 
 const inDir = 'server/img/healpix';
-
-const globHibsFolders = (dir,results=[]) => {
-    const list = fs.readdirSync(dir);
-    if (list.includes('properties.json')) {
-        results.push(dir);
-    } else {
-        list.forEach(file => {
-            const fileAbsolute = dir + '/' + file;
-            const stat = fs.statSync(fileAbsolute);
-            if (stat.isDirectory()) {
-                globHibsFolders(fileAbsolute,results);
-            }
-
-        });
-    }
-    return results;
-}
 
 const hipsFolder = globHibsFolders(inDir);
 

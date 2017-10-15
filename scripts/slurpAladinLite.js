@@ -3,21 +3,18 @@ const path = require('path');
 const request = require('request');
 const child_process = require('child_process');
 const all_hips = require('./surveys.json');
+const {
+    mkdir,
+    nPixMax,
+    norderPath,
+    tilePath,
+    tiles,
+    globHibsFolders
+} = require('./common');
 
 const maxDepth = 3;
 
 const localFolder = 'hips/';
-
-const makedDirs = new Set();
-
-const mkdir = dir => {
-    if (makedDirs.has(dir)) {
-        return;
-    }
-    makedDirs.add(dir);
-    console.log('mkdir -p '+dir);
-    child_process.execSync('mkdir -p '+dir);
-}
 
 const downloadlist = [];
 
@@ -28,15 +25,6 @@ all_hips.forEach(hips=>{
         const file = localFolder+hips.url.split('//')[1]+p;
         console.log(file);
         downloadlist.push({url,file});
-    }
-
-    const nPixMax = norder => norder==0 ? 12 : nPixMax(norder-1)*4;
-
-    const norderPath = norder => "/" + "Norder" + norder;
-
-    const tilePath = (norder, npix, format) => {
-        const dirIdx = Math.floor(npix/10000)*10000;
-        return norderPath(norder) + "/Dir" + dirIdx + "/Npix" + npix + "." + format;
     }
 
     const formats = hips.format.split(' ').map(x=>x=='jpeg'?'jpg':x); 

@@ -78,7 +78,6 @@ const html = `
     <a-scene 
         antialias="true" 
         celestial-system="scale-time: 1; reposition-ms: 1000; 
-                          time: 2017-10-01T00:00:00.000+02:00;
                           longitude: 7.8134; latitude: 51.6802; 
                           altitude: 0; body: earth;
                           scaleBody: 50;"
@@ -129,7 +128,7 @@ const html = `
                 <a-sphere mixin="Sphere" color="darkblue" material="side:double" radius="10000000000000"></a-sphere>
                 -->
             
-                <a-entity stars="size: -1; mag: 6; src: url(server/data/milkyway.json); texture: url(server/jsorrery/img/star.png);"></a-entity>
+                <a-entity stars="size: 5; mag: 6; src: url(server/data/milkyway.json); texture: url(server/jsorrery/img/star.png);"></a-entity>
 
                 <a-entity id="galactic-reference-frame" celestial-coordinate-transformation="from:equatorial;to:galactic">
                 </a-entity>

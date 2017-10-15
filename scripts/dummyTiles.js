@@ -4,48 +4,20 @@ const path = require('path');
 const request = require('request');
 const child_process = require('child_process');
 const PropertiesReader = require('properties-reader');
+const {
+    mkdir,
+    nPixMax,
+    norderPath,
+    tilePath,
+    tiles,
+    globHibsFolders
+} = require('./common');
 
 const depth = 3;
 
 const format = "jpg";
 
 const outDir = 'server/img/healpix/dummy';
-
-const makedDirs = new Set();
-
-const mkdir = dir => {
-    if (makedDirs.has(dir)) {
-        return;
-    }
-    makedDirs.add(dir);
-    console.log('mkdir -p '+dir);
-    child_process.execSync('mkdir -p '+dir);
-}
-
-const nPixMax = norder => norder==0 ? 12 : nPixMax(norder-1)*4;
-
-const norderPath = norder => "/Norder" + norder;
-
-const tilePath = (norder, npix) => {
-    const dirIdx = Math.floor(npix/10000)*10000;
-    return norderPath(norder) + "/Dir" + dirIdx + "/Npix" + npix + "." + format;
-}
-
-
-const tiles = (list,i,d,px,py) => {
-    if (d==depth) {
-        list.push({i,d,px,py});
-        return;
-    }
-    [
-        {j:0,x:0,y:0},
-        {j:1,x:0,y:1},
-        {j:2,x:1,y:0},
-        {j:3,x:1,y:1}
-    ].forEach(({j,x,y})=> {
-        tiles(list,i*4+j,d+1,x+px*2,y+py*2);
-    });
-}
 
 async function generateCompositeImages() {
 
