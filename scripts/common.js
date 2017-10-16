@@ -42,7 +42,7 @@ const tiles = (list,i,d,px,py) => {
 
 const globHibsFolders = (dir,results=[]) => {
     const list = fs.readdirSync(dir);
-    if (list.includes('properties')) {
+    if (list.includes('properties.json')) {
         results.push(dir);
     } else {
         list.forEach(file => {

@@ -128,7 +128,7 @@ const html = `
                 <a-sphere mixin="Sphere" color="darkblue" material="side:double" radius="10000000000000"></a-sphere>
                 -->
             
-                <a-entity stars="size: 5; mag: 6; src: url(server/data/milkyway.json); texture: url(server/jsorrery/img/star.png);"></a-entity>
+                <a-entity stars="size: 2; mag: 10; src: url(server/data/milkyway.json); texture: url(server/jsorrery/img/star.png);"></a-entity>
 
                 <a-entity id="galactic-reference-frame" celestial-coordinate-transformation="from:equatorial;to:galactic">
                 </a-entity>
@@ -246,7 +246,7 @@ $(()=> {
     $('body').html(html);
 
     $.getJSON('server/img/healpix/index.json',index=>{
-        setHips(index[6]);
+        setHips(index[2]);
         const hudMenu = $('#hudMenu');
         // _.delay(()=>hudMenu.append(index2Table(index)),5000);
     });
