@@ -5,130 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a0b2183-3e39-431c-8637-29e6fcd0872e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/CelestialBody.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/Universe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Gravity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/MoveAlgorithm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/OrbitalElements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Quadratic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Ticker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/constants.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/Constellations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/elp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/data/vsop-earth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Body3d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/GeoPos.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/MilkyWayParticles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Scene.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Sun.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/BodyOrbitLines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/OrbitLine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/OrbitLinesManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/Tracer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/lines/TracerManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/utils/DebugPoint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/SolarSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/ceres.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth/VSOP-earth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/eris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/halley.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/haumea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/jupiter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/makemake.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/mars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/mercury.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon/OsculatingOrbit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/moon/elp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/neptune.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/pluto.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/saturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/sun.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/uranus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/venus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/stars.vsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/shaders/sun.vsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/three/RingGeometry2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/ColorUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/GeoCoord.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/planetarium/jsorrery/utils/JD.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/math/LLSpherical.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/patch/three.toString.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cosmei.iml" afterPath="$PROJECT_DIR$/.idea/cosmei.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js" afterPath="$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cursor-sphere-coordinates.js" afterPath="$PROJECT_DIR$/src/components/cursor-sphere-coordinates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/spherical-coords.js" afterPath="$PROJECT_DIR$/src/components/spherical-coords.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/spherical-grid.js" afterPath="$PROJECT_DIR$/src/components/spherical-grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.bak.js" afterPath="$PROJECT_DIR$/src/index.bak.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1057516332">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="device-location-and-time.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/device-location-and-time.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="copy-position.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/copy-position.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="celestial-coordinate-transformation.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="group-opacity.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/group-opacity.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1063">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <marker date="1505592729699" expanded="true" signature="8629:8757" ph="{...}" />
-                <marker date="1505592729699" expanded="true" signature="8629:8761" ph="{...}" />
-              </folding>
+            <state relative-caret-position="855">
+              <caret line="231" column="26" selection-start-line="231" selection-start-column="26" selection-end-line="231" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -269,7 +221,6 @@
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
@@ -280,13 +231,17 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
-    <option name="y" value="17" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="614" />
+    <option name="y" value="590" />
     <option name="width" value="1871" />
     <option name="height" value="1064" />
   </component>
@@ -344,61 +299,42 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="weltbal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weltbal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="weltbal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weltbal" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="systems" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="holosky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="holosky" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="systems" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="celestial-system" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="weltbal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weltbal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -428,8 +364,8 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -470,34 +406,36 @@
       <workItem from="1505512449021" duration="363000" />
       <workItem from="1505517831055" duration="13000" />
       <workItem from="1505593922490" duration="7000" />
+      <workItem from="1562622353264" duration="1715000" />
+      <workItem from="1562741459231" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328358000" />
+    <option name="totallyTimeSpent" value="330088000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="17" width="1871" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="614" y="590" width="1871" height="1064" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16318887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901752" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33694476" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,14 +444,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/BigJupiter.js" />
     <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/EarthMoon.js" />
     <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/InnerSolarSystem.js" />
     <entry file="file://$PROJECT_DIR$/src/jsorrery/scenario/scenarios/MoonSOI.js" />
@@ -532,39 +463,25 @@
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/constants.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/earth/VSOP-earth.js" />
     <entry file="file://$PROJECT_DIR$/server/img/skymap/negx.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/skymap/posy.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/skymap/posz.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/skymap/posx.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/skymap/negz.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/skymap/negy.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/img/3000_CC_BY-NC.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Gravity.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/algorithm/Math.js" />
@@ -577,89 +494,54 @@
     <entry file="file://$PROJECT_DIR$/src/components/healpix-sphere/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <first_editor>
+            <caret column="14" selection-start-column="14" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/Universe.js" />
-    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/SolarSystem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/InnerSolarSystem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/SolarSystem.js" />
+    <entry file="file://$PROJECT_DIR$/modules_for_doku/jsorrery/src/scenario/scenarios/InnerSolarSystem.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Scene.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/bodies/sun.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Body3d.js" />
-    <entry file="file://$PROJECT_DIR$/server/jsorrery/data/milkyway.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/jsorrery/data/milkyway.json" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/MilkyWayParticles.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/graphics3d/Sun.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/loaders/ResourceLoader.js" />
     <entry file="file://$PROJECT_DIR$/src/components/planetarium/jsorrery/scenario/scenarios/SolarSystem.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/device-location-and-time.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/copy-position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/celestial-coordinate-transformation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/device-location-and-time.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/group-opacity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <marker date="1505592729699" expanded="true" signature="8629:8757" ph="{...}" />
-            <marker date="1505592729699" expanded="true" signature="8629:8761" ph="{...}" />
-          </folding>
+        <state relative-caret-position="855">
+          <caret line="231" column="26" selection-start-line="231" selection-start-column="26" selection-end-line="231" selection-end-column="26" />
         </state>
       </provider>
     </entry>

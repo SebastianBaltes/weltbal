@@ -248,6 +248,6 @@ $(()=> {
     $.getJSON('server/img/healpix/index.json',index=>{
         setHips(index[2]);
         const hudMenu = $('#hudMenu');
-        // _.delay(()=>hudMenu.append(index2Table(index)),5000);
+        _.delay(()=>hudMenu.append(index2Table(index)),5000);
     });
 });
