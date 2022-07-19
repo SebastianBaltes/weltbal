@@ -45,7 +45,7 @@
     "postcss-loader": "*",
     "progress": "^2.0.0",
     "properties": "^1.2.1",
-    "properties-reader": "0.0.15",
+    "properties-reader": "2.2.0",
     "purifycss-webpack-plugin": "*",
     "raw-loader": "*",
     "resolve-url-loader": "*",
