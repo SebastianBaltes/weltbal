@@ -1,7 +1,7 @@
 {
   "webapp": {
     "port": 8080,
-    "start_cmd": "npm start",
+    "start_cmd": "bash -c 'source ~/.nvm/nvm.sh && nvm use 8 && npm start'",
     "path": "/"
   }
 }
