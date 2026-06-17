@@ -50,7 +50,7 @@
     "raw-loader": "*",
     "resolve-url-loader": "*",
     "sass-loader": "*",
-    "sharp": "^0.18.4",
+    "sharp": "^0.30.5",
     "sockjs-client": "*",
     "strict-loader": "*",
     "style-loader": "*",
